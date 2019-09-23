@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-2"
+  region = "eu-west-1"
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
 }
@@ -7,12 +7,7 @@ provider "aws" {
 data "aws_ami" "ubuntu" {
   most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"]
-  }
-
-  filter {
+    filter {
     name   = "virtualization-type"
     values = ["hvm"]
   }
