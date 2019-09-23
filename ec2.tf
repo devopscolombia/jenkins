@@ -13,7 +13,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["895544890250"]
+  owners = ["798582026253"]
 }
 
 resource "aws_instance" "web" {
