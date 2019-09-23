@@ -1,13 +1,13 @@
 provider "aws" {
   version = "~> 2.29"
-  region = "eu-west-1"
+  region = "eu-west-2"
   access_key = "AKIA5BAVCSOFEDAZX6UR"
   secret_key = "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"
 }
 
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["798582026253"]
+  owners = ["895544890250"]
 
     }
 
