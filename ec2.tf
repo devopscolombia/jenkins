@@ -7,15 +7,10 @@ provider "aws" {
 
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["895544890250"]
-data "aws_availability_zone" "az" {
-}
+  owners = ["798582026253"]
+
 }
 
-filter {
-  name = "name"
-  values = ["ubuntu/images/hvm-ssd/ubuntu-xenaial-16.04-amd64-server-*"]
-  }
 
 resource "aws_instance" "web-server" {
   ami           = "${data.aws_ami.ubuntu.id}"
