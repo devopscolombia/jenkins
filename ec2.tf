@@ -1,8 +1,8 @@
 provider "aws" {
   version = "~> 2.29"
   region = "eu-west-1"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  access_key = "AKIA5BAVCSOFEDAZX6UR"
+  secret_key = "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"
 }
 
 data "aws_ami" "ubuntu" {
