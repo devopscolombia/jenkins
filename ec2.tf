@@ -7,7 +7,7 @@ provider "aws" {
 
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["895544890250"]
+  owners = ["798582026253"]
 
     }
 
